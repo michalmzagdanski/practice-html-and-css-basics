@@ -23,23 +23,53 @@
     width: 600px;
     padding: 20px;
     box-sizing: border-box;
+
 }
 
 .child {
     font-family: "Source Sans PRO";
+
 }
 
 .child--first {
     margin-right: 10px;
     width: calc((100% - 20px) * 0.3);
+
 }
 
 .child--middle {
     margin-right: 10px;
     width: calc((100% - 20px) * 0.3);
-
+    font-weight: bold;
 }
 
 .child--last {
     width: calc((100% - 20px) * 0.4);
+font-style: italic;
+}
+
+.parent--inline-block {
+    font-size: 0;
+}
+
+.parent--inline-block .child {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: top;
+}
+
+
+
+.parent--float .child {
+    float: left;
+}
+
+.parent--float {
+    display: flow-root;
+
+}
+
+.parent--flexbox {
+    display: flex;
+
 }
